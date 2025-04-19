@@ -31,7 +31,6 @@ export function EthiopianIntroducer() {
       transition={{ duration: 0.5 }}
       className="fixed bottom-4 right-4 z-50 flex flex-col items-end"
     >
-      {/* Speech Bubble - Positioned above the avatar */}
       {!isMinimized && (
         <motion.div
           initial={{ opacity: 0, y: 10, scale: 0.9 }}
@@ -47,7 +46,6 @@ export function EthiopianIntroducer() {
                 : "bg-gradient-to-br from-purple-100/90 to-pink-100/90 backdrop-blur-md border border-purple-300/50 shadow-lg"
             }`}
           >
-            {/* Ethiopian pattern border */}
             <div className="absolute inset-0 rounded-xl overflow-hidden">
               <div
                 className={`absolute top-0 left-0 w-6 h-6 border-t border-l ${
@@ -166,14 +164,12 @@ export function EthiopianIntroducer() {
         </motion.div>
       )}
 
-      {/* Avatar - Clickable to toggle speech bubble */}
       <motion.div
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsMinimized(false)}
         className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden cursor-pointer"
       >
-        {/* Ethiopian pattern border around avatar */}
         <div
           className={`absolute inset-0 rounded-full border-2 ${
             isDark ? "border-amber-500/50" : "border-amber-600/70"
@@ -185,7 +181,6 @@ export function EthiopianIntroducer() {
           } z-10`}
         ></div>
 
-        {/* Decorative elements around avatar */}
         <div
           className={`absolute -top-1 left-1/2 -translate-x-1/2 w-3 h-3 border ${
             isDark ? "border-amber-400/70" : "border-amber-600/70"
@@ -215,7 +210,7 @@ export function EthiopianIntroducer() {
           } rounded-full z-0`}
         ></div>
         <Image
-          src="/ethiopian-avatar.png"
+          src="/mer.jpeg"
           alt="Mer - Ethiopian Introducer"
           fill
           className="object-cover"
